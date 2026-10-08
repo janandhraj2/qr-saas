@@ -1,0 +1,17 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}JAR Admin · JAR Solutions QR SaaS{% endblock %}
+
+{% block branding %}
+<div id="branding">
+  <h1 id="site-name">
+    <a href="{% url 'admin:index' %}">JAR Admin</a>
+    <span style="font-size:11px;font-weight:600;opacity:.75;letter-spacing:.5px;margin-left:8px;">JAR SOLUTIONS QR SAAS</span>
+  </h1>
+</div>
+{% endblock %}
+
+{% block extrastyle %}
+<link rel="stylesheet" type="text/css" href="{% static 'admin_custom.css' %}">
+{% endblock %}

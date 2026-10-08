@@ -1,0 +1,202 @@
+/* JAR Solutions — Custom Django Admin Theme (wine-red premium) */
+
+:root {
+  --jar-wine: #7f1d1d;
+  --jar-wine-dark: #5c1414;
+  --jar-wine-light: #991b1b;
+  --jar-wine-50: #fdf2f2;
+  --jar-wine-100: #fbe4e4;
+  --jar-stone: #44403c;
+  --jar-radius: 12px;
+}
+
+/* ===== Header & branding ===== */
+#header {
+  background: linear-gradient(135deg, var(--jar-wine-dark), var(--jar-wine) 55%, var(--jar-wine-light));
+  color: #fff;
+  padding: 14px 28px;
+  box-shadow: 0 4px 20px rgba(127, 29, 29, 0.35);
+}
+#header a:link, #header a:visited { color: #fde8e8; }
+#header a:hover { color: #fff; }
+#branding h1 {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+#branding h1 a:link, #branding h1 a:visited { color: #fff; }
+
+#user-tools {
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+#user-tools a {
+  border-bottom: none;
+  border-radius: 8px;
+  padding: 4px 10px;
+  transition: background 0.15s;
+}
+#user-tools a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+/* ===== Breadcrumbs ===== */
+div.breadcrumbs {
+  background: var(--jar-wine-50);
+  color: var(--jar-wine);
+  border-bottom: 1px solid var(--jar-wine-100);
+  padding: 10px 28px;
+  font-size: 13px;
+}
+div.breadcrumbs a { color: var(--jar-wine-light); }
+div.breadcrumbs a:hover { color: var(--jar-wine-dark); }
+
+/* ===== Page structure ===== */
+#content {
+  padding: 24px 28px;
+}
+#content-main {
+  background: #fff;
+  border: 1px solid #e7e5e4;
+  border-radius: var(--jar-radius);
+  box-shadow: 0 10px 30px rgba(68, 64, 60, 0.06);
+  padding: 22px;
+}
+.module {
+  border-radius: var(--jar-radius);
+  border: 1px solid #e7e5e4;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.module h2, .module caption, .inline-group h2 {
+  background: linear-gradient(135deg, var(--jar-wine), var(--jar-wine-light));
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 10px 14px;
+}
+.module table th, .module table td { padding: 10px 14px; }
+.module table thead th {
+  background: var(--jar-wine-50);
+  color: var(--jar-wine-dark);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+/* ===== Links & buttons ===== */
+a:link, a:visited { color: var(--jar-wine-light); }
+a:hover { color: var(--jar-wine-dark); }
+
+.button, input[type="submit"], input[type="button"], .submit-row input, a.button {
+  background: linear-gradient(135deg, var(--jar-wine), var(--jar-wine-light));
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 9px 18px;
+  font-weight: 600;
+  font-size: 13px;
+  box-shadow: 0 4px 14px rgba(127, 29, 29, 0.28);
+  transition: transform 0.12s, box-shadow 0.12s, filter 0.12s;
+}
+.button:hover, input[type="submit"]:hover, input[type="button"]:hover, .submit-row input:hover, a.button:hover {
+  background: linear-gradient(135deg, var(--jar-wine-dark), var(--jar-wine));
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(127, 29, 29, 0.35);
+}
+.button.default, input[type="submit"].default, .submit-row input.default {
+  background: linear-gradient(135deg, #15803d, #16a34a);
+  box-shadow: 0 4px 14px rgba(21, 128, 61, 0.3);
+}
+.button.default:hover, input[type="submit"].default:hover {
+  background: linear-gradient(135deg, #14532d, #15803d);
+}
+.deletelink-box a, a.deletelink {
+  background: linear-gradient(135deg, #b91c1c, #dc2626);
+  color: #fff;
+  border-radius: 10px;
+  padding: 9px 18px;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(185, 28, 28, 0.28);
+}
+.deletelink-box a:hover, a.deletelink:hover { background: linear-gradient(135deg, #991b1b, #b91c1c); color: #fff; }
+
+/* ===== Forms ===== */
+input[type="text"], input[type="password"], input[type="email"], input[type="url"],
+input[type="number"], input[type="tel"], select, textarea {
+  border: 1.5px solid #d6d3d1;
+  border-radius: 10px;
+  padding: 9px 12px;
+  font-size: 14px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  background: #fff;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: var(--jar-wine-light);
+  box-shadow: 0 0 0 3px rgba(153, 27, 27, 0.12);
+  outline: none;
+}
+.form-row { padding: 12px 0; }
+.aligned label { font-weight: 600; color: var(--jar-stone); }
+
+/* ===== Login page ===== */
+.login {
+  background: radial-gradient(ellipse at top right, rgba(153, 27, 27, 0.08), transparent 50%),
+              radial-gradient(ellipse at bottom left, rgba(220, 38, 38, 0.06), transparent 50%), #fafaf9;
+}
+.login #container {
+  background: #fff;
+  border: 1px solid #e7e5e4;
+  border-radius: 20px;
+  box-shadow: 0 30px 80px rgba(127, 29, 29, 0.16);
+  padding: 36px 40px;
+  max-width: 420px;
+  margin-top: 8vh;
+}
+.login #header { background: none; box-shadow: none; padding: 0 0 18px; }
+.login #branding h1 { color: var(--jar-wine); font-size: 24px; }
+.login .form-row label { color: var(--jar-stone); }
+.login .submit-row { text-align: center; }
+.login .submit-row input { width: 100%; padding: 12px; font-size: 15px; }
+
+/* ===== Messages ===== */
+.messagelist li {
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-weight: 600;
+}
+.messagelist li.success { background: #f0fdf4; border: 1px solid #bbf7d0; color: #166534; }
+.messagelist li.error, .messagelist li.warning { background: var(--jar-wine-50); border: 1px solid var(--jar-wine-100); color: var(--jar-wine); }
+
+/* ===== Dashboard app list ===== */
+.app-accounts table caption,
+.app-auth table caption,
+.app-authtoken table caption,
+.app-core table caption,
+.app-payments table caption,
+.app-qrcodes table caption,
+.app-sessions table caption,
+.app-admin table caption {
+  background: linear-gradient(135deg, var(--jar-wine), var(--jar-wine-light));
+}
+
+/* ===== Footer / misc ===== */
+#footer { color: #a8a29e; font-size: 12px; padding: 14px 28px; }
+.object-tools a {
+  background: var(--jar-wine-50);
+  color: var(--jar-wine);
+  border: 1px solid var(--jar-wine-100);
+  border-radius: 8px;
+  font-weight: 600;
+}
+.object-tools a:hover { background: var(--jar-wine-100); color: var(--jar-wine-dark); }
+.changelist-filter h2, #changelist-filter h2 {
+  background: var(--jar-wine-50) !important;
+  color: var(--jar-wine-dark) !important;
+}
+#changelist-filter li.selected { border-left-color: var(--jar-wine); }
+#changelist-filter li.selected a { color: var(--jar-wine) !important; }
