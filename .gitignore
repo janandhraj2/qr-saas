@@ -29,3 +29,5 @@ Thumbs.db
 genlogs/
 *.zip
 *.err
+
+.vercel
